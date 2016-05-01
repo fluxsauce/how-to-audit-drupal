@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>How to audit Drupal Sites</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/simple.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,129 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<section>
+						<h1>How to audit Drupal Sites</h1>
+						<h3>2016.05.11 - DrupalCon New Orleans</h3>
+						<p>
+							<small><a href="https://about.me/jonpeck">about.me/jonpeck</a> - <a href="https://twitter.com/fluxsauce">@fluxsauce</a></small>
+						</p>
+					</section>
+					<section>
+						<h2>Jon Peck</h2>
+						<p><img src="assets/hello-yes-this-is-dog.gif"/></p>
+						<p>Software Architect at <a href="https://www.fourkitchens.com/">Four Kitchens</a></p>
+						<p><a href="https://twitter.com/fluxsauce">@fluxsauce</a> - <a href="https://github.com/fluxsauce">github.com/fluxsauce</a> - <a href="https://drupal.org/u/fluxsauce">drupal.org/u/fluxsauce</a></p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>What is an audit?</h2>
+						<ul>
+							<li class="fragment">Official inspection of accounts</li>
+							<li class="fragment">Validate the good things</li>
+							<li class="fragment">Highlight areas of improvement</li>
+						</ul>
+						<aside class="notes">
+							<p>An audit is an <strong>official</strong> inspection of an individual's or organization's accounts, typically by an independent body.</p>
+						  <p>Audit is not a dirty word. An audit can <strong>validate</strong> the good things that you are doing, in addition to <strong>highlighting</strong> areas of improvement.</p>
+						</aside>
+					</section>
+					<section>
+						<h3>Why audit sites?</h3>
+						<ul>
+							<li class="fragment">Learn about contents and structure</li>
+							<li class="fragment">Ensure optimal configuration</li>
+							<li class="fragment">Discover areas of improvement</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Every site is unique, but...</h3>
+						<ul>
+							<li class="fragment">Built with the same framework</li>
+							<li class="fragment">Similar architectural requirements</li>
+							<li class="fragment">One size fits most</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Effective auditing</h3>
+						<ul>
+							<li class="fragment">Consistent</li>
+							<li class="fragment">Quantifiable</li>
+							<li class="fragment">Contextually aware</li>
+							<li class="fragment">Easy to understand</li>
+							<li class="fragment">Actionable recommendations</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h2>Tools for Auditing</h2>
+					<img src="assets/identifying-wood.jpg">
+					<p>Yup, it's wood.</p>
+				</section>
+				<section>
+					<section>
+						<h2>Site Audit</h2>
+						<ul>
+							<li class="fragment"><a href="https://www.drupal.org/project/site_audit">drupal.org/project/site_audit</a></li>
+							<li class="fragment">Drupal 7 and 8 site  analyzer</li>
+							<li class="fragment">Drush command on  target platform</li>
+							<li class="fragment">Reports in many formats</li>
+							<li class="fragment">Powers <a href="https://pantheon.io/features/launch-check">Launch Check</a>  on Pantheon</li>
+						</ul>
+					</section>
+					<section>
+						<h3>What does Site Audit report?</h3>
+						<ul>
+							<li class="fragment">Best Practices</li>
+							<li class="fragment">Block</li>
+							<li class="fragment">Cache</li>
+							<li class="fragment">Codebase</li>
+							<li class="fragment">Content</li>
+							<li class="fragment">Cron</li>
+							<li class="fragment">Database</li>
+							<li class="fragment">Extensions</li>
+							<li class="fragment">Front End</li>
+							<li class="fragment">Security</li>
+							<li class="fragment">System Status</li>
+							<li class="fragment">Users</li>
+							<li class="fragment">Views</li>
+							<li class="fragment">Watchdog</li>
+						</ul>
+					</section>
+					<section>
+						<h3>What doesn't Site Audit analyze?</h3>
+						<ul>
+							<li class="fragment">Usability and site experience</li>
+							<li class="fragment">Aesthetics</li>
+							<li class="fragment">Semantic content</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Read the Full Manual</h3>
+						<code>drush help --filter=site_audit</code>
+					</section>
+					<section>
+						<h3>Audit Cache</h3>
+						<code>drush audit_cache</code>
+					</section>
+					<section>
+						<h3>Show detailed results</h3>
+						<code>drush ac --detail</code>
+					</section>
+					<section>
+						<h3>JSON output</h3>
+						<code>drush audit_cron --json</code>
+					</section>
+					<section>
+						<h3>HTML output</h3>
+						<code>drush audit_best_practices --html --detail</code>
+					</section>
+					<section>
+						<h3>Audit All</h3>
+						<code>drush aa --skip=insights --html --bootstrap</code>
+					</section>
+				</section>
 			</div>
 		</div>
 
