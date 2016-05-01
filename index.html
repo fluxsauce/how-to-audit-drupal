@@ -146,6 +146,174 @@
 						<h3>Audit All</h3>
 						<code>drush aa --skip=insights --html --bootstrap</code>
 					</section>
+					<section>
+						<h3>Extending Site Audit</h3>
+						<ul>
+							<li class="fragment">Modules can implement both Checks and Reports</li>
+							<li class="fragment">Documentation in README.md</li>
+							<li class="fragment"><a href="https://www.drupal.org/project/issues/site_audit">Drupal.org Issue Queue</a></li>
+							<li class="fragment"><a href="https://github.com/fluxsauce/site_audit/pulls">GitHub Pull Requests</a></li>
+						</ul>
+					</section>
+					<section>
+						<h3>Share your Checks and Reports!</h3>
+					</section>
+					<section>
+						<h3>Site Audit Drupal Console Support!</h3>
+						<p>Work in progress...</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Drupal Utilities</h2>
+					</section>
+					<section>
+						<h3>Unused Modules</h3>
+						<ul>
+							<li class="fragment">https://www.drupal.org/project/unused_modules</li>
+							<li class="fragment">Lists unused modules and projects that can be safely deleted</li>
+							<li class="fragment">Ignores disabled child modules</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Security Review</h3>
+						<ul>
+							<li class="fragment">https://www.drupal.org/project/security_review</li>
+							<li class="fragment">Checks site and hosting configuration, site content for security problems</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Hacked!</h3>
+						<ul>
+							<li class="fragment">https://www.drupal.org/project/hacked</li>
+							<li class="fragment">Compares Drupal, contrib modules and themes with version on drupal.org</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Cache Audit</h3>
+						<ul>
+							<li class="fragment">https://www.drupal.org/project/cacheaudit</li>
+							<li class="fragment">Reports caching settings of Drupal core, Block, Views, Panels
+							<li class="fragment">Panels is unique (not in Site Audit)</li>
+						</ul>
+					</section>
+					<section>
+						<h3>PHP_CodeSniffer / Coder</h3>
+						<ul>
+							<li class="fragment">https://github.com/squizlabs/PHP_CodeSniffer</li>
+							<li class="fragment">https://www.drupal.org/project/coder</li>
+							<li class="fragment">Includes "Drupal" and "DrupalPractice" sniffs</li>
+							<li class="fragment">Detect deviations from Drupal Coding Standards</li>
+							<li class="fragment">Use Drupal 8 version to analyze code on both 7 and 8</li>
+						</ul>
+					</section>
+					<section>
+						<h3>PAReview.sh</h3>
+						<ul>
+							<li class="fragment">http://pareview.sh/</li>
+							<li class="fragment">Automated reviews of drupal.org projects</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h2>PHP Tools</h2>
+					<ul>
+						<li class="fragment">PHP Copy/Paste Detector - https://github.com/sebastianbergmann/phpcpd</li>
+						<li class="fragment">PHP Mess Detector - http://phpmd.org/<ul>
+							<li class="fragment">Possible bugs, suboptimal or unused code, overcomplicated expressions</li>
+						</ul></li>
+						<li class="fragment">PHP LOC - https://github.com/sebastianbergmann/phploc<ul>
+							<li class="fragment">Measures size and structure</li>
+						</ul></li>
+					</ul>
+				</section>
+				<section>
+					<h2>Git Tools</h2>
+					<ul>
+						<li class="fragment">GitStats - http://gitstats.sourceforge.net/</li>
+						<li class="fragment">gitinspector - https://code.google.com/p/gitinspector/</li>
+					</ul>
+				</section>
+				<section>
+					<h2>JavaScript Tools</h2>
+					<ul>
+						<li class="fragment">ESLint - http://eslint.org/ - Pluggable linting utility for JavaScript and JSX</li>
+						<li class="fragment">JSCS - http://jscs.info/ - JavaScript Code Style</li>
+						<li class="fragment">JSHint - http://jshint.com/ - Community-driven tool to detect errors, potential problems</li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h2>Hosted Utilities</h2>
+					</section>
+					<section>
+						<h2>WebPageTest.org</h2>
+						<ul>
+							<li class="fragment">http://www.webpagetest.org/</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Google PageSpeed Insights</h2>
+						<ul>
+							<li class="fragment">https://developers.google.com/speed/pagespeed/insights/</li>
+						</ul>
+					</section>
+					<section>
+						<h2>WAVE Web Accessibility Tool</h2>
+						<ul>
+							<li class="fragment">http://wave.webaim.org/</li>
+							<li class="fragment">Analyzes web pages for accessibility</li>
+							<li class="fragment">Actionable recommendations on how to fix problems</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Qualys SSL Labs SSL Server Test</h2>
+						<ul>
+							<li class="fragment">https://www.ssllabs.com/ssltest/</li>
+							<li class="fragment">Analyzes SSL configuration</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Effectively delivering an audit</h2>
+						<img src="assets/uhf-firehose.gif"/>
+					</section>
+					<section>
+						<h2>Structure of a Report</h2>
+						<ul>
+							<li class="fragment">Overview</li>
+							<li class="fragment">Actionable recommendations</li>
+							<li class="fragment">Appendix<ul>
+								<li class="fragment">How to install and use tools</li>
+								<li class="fragment">Raw results</li>
+							</ul>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>GitBook for publishing reports</h2>
+						<ul>
+							<li class="fragment">https://github.com/GitbookIO/gitbook</li>
+							<li class="fragment">Book format and toolchain using Git and Markdown</li>
+							<li class="fragment">Command-line, uses Node.JS</li>
+							<li class="fragment">Outputs HTML, PDF, ebooks, and more</li>
+							<li class="fragment">Incredibly useful for large structured reports</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Editing GitBook structure</h2>
+					</section>
+					<section>
+						<h2>GitBook HTML Format</h2>
+					</section>
+				</section>
+				<section>
+					<h2>Site Audit co-maintainer wanted.</h2>
+					<p>Interested? Submit an issue.</p>
+				</section>
+				<section>
+					<h2>Good configuration matters.</h2>
 				</section>
 			</div>
 		</div>
