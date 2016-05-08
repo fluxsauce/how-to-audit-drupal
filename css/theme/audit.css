@@ -338,3 +338,12 @@ body {
   -moz-columns: 2; }
   .two-col li {
     margin-left: 2em; }
+
+.reveal section img {
+  box-shadow: 10px 10px 5px 0px #358044; }
+
+.reveal .footer {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  font-size: 0.5em; }

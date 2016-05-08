@@ -94,3 +94,14 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
     margin-left: 2em;
   }
 }
+
+.reveal section img {
+  box-shadow: 10px 10px 5px 0px rgba(53,128,68,1);
+}
+
+.reveal .footer {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  font-size: 0.5em;
+}
