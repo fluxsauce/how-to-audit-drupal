@@ -251,20 +251,20 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #BA3A79;
+  color: #FFF;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   transition: color .15s ease; }
 
 .reveal a:hover {
-  color: #d882ac;
+  color: white;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #802853; }
+  background: #d9d9d9; }
 
 /*********************************************
  * IMAGES
@@ -286,7 +286,7 @@ body {
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #BA3A79;
+  border-color: #FFF;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
@@ -294,31 +294,31 @@ body {
  *********************************************/
 .reveal .controls .navigate-left,
 .reveal .controls .navigate-left.enabled {
-  border-right-color: #BA3A79; }
+  border-right-color: #FFF; }
 
 .reveal .controls .navigate-right,
 .reveal .controls .navigate-right.enabled {
-  border-left-color: #BA3A79; }
+  border-left-color: #FFF; }
 
 .reveal .controls .navigate-up,
 .reveal .controls .navigate-up.enabled {
-  border-bottom-color: #BA3A79; }
+  border-bottom-color: #FFF; }
 
 .reveal .controls .navigate-down,
 .reveal .controls .navigate-down.enabled {
-  border-top-color: #BA3A79; }
+  border-top-color: #FFF; }
 
 .reveal .controls .navigate-left.enabled:hover {
-  border-right-color: #d882ac; }
+  border-right-color: white; }
 
 .reveal .controls .navigate-right.enabled:hover {
-  border-left-color: #d882ac; }
+  border-left-color: white; }
 
 .reveal .controls .navigate-up.enabled:hover {
-  border-bottom-color: #d882ac; }
+  border-bottom-color: white; }
 
 .reveal .controls .navigate-down.enabled:hover {
-  border-top-color: #d882ac; }
+  border-top-color: white; }
 
 /*********************************************
  * PROGRESS BAR
@@ -327,10 +327,14 @@ body {
   background: rgba(0, 0, 0, 0.2); }
 
 .reveal .progress span {
-  background: #BA3A79;
+  background: #FFF;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+.reveal a {
+  border-bottom: thin solid;
+  font-weight: bolder; }
 
 .two-col {
   columns: 2;
@@ -348,3 +352,5 @@ body {
   left: 1em;
   font-size: 0.5em;
   z-index: 9999; }
+  .reveal .footer a {
+    font-weight: normal; }

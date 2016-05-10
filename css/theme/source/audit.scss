@@ -78,7 +78,7 @@ $headingColor: #FFF;
 $headingTextShadow: none;
 $headingTextTransform: none;
 $backgroundColor: #35aa4e;
-$linkColor: #BA3A79;
+$linkColor: #FFF;
 $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 
@@ -86,6 +86,10 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 @import "../template/theme";
 // ---------------------------------------------
 
+.reveal a {
+  border-bottom: thin solid;
+  font-weight: bolder;
+}
 .two-col {
     columns: 2;
     -webkit-columns: 2;
@@ -105,4 +109,7 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
   left: 1em;
   font-size: 0.5em;
   z-index: 9999;
+  a {
+    font-weight: normal;    
+  }
 }
