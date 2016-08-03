@@ -6,6 +6,8 @@ By collaborating on and using standardized analysis tools, developers can save t
 
 Variations of this presentation were given at:
 
+- DrupalCamp Denver 2016
+- DrupalCorn 2016
 - DrupalCon 2016 New Orleans
 - BADCamp (Bay Area Drupal Camp) 2015
 - Pacific Northwest Drupal Summit 2015
